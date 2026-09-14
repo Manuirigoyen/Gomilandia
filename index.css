@@ -52,11 +52,22 @@ header img
 
 }
 
-.list-navegacion img {
-    width: 34px;
-    height: 34px;
-    object-fit: contain;
+.cart-link {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     flex-shrink: 0;
+    transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.cart-link svg {
+    width: 19px;
+    height: 19px;
 }
 
 .menu-toggle {
@@ -223,10 +234,10 @@ a:hover
 
 }
 
-.list-navegacion img:hover
+.cart-link:hover
 {
-    
-    opacity: 0.8;
+    background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.15) 100%);
+    transform: translateY(-2px) scale(1.05);
     cursor: pointer;
 }
 
@@ -770,9 +781,14 @@ footer
         padding: 12px 0 4px;
     }
 
-    .list-navegacion img {
-        width: 28px;
-        height: 28px;
+    .cart-link {
+        width: 34px;
+        height: 34px;
+    }
+
+    .cart-link svg {
+        width: 17px;
+        height: 17px;
     }
 
     .barra {
